@@ -10,14 +10,11 @@ selector and the style property, write pure JavaScript to reveal
 who's behind the remaining boxes. 
 ________________________________________________________________*/
 
-let boxTw0 = document.querySelector("#box-two")
-console.log(boxTwo);
-// boxTwo.style.opacity = 1;
+const boxTwo = document.querySelector('#box-two');
+boxTwo.style.opacity = 1;
 
-// let boxNine = document.querySelector("#box-nine")
-
-// boxNine.style.opacity = 1;
-
+const boxNine = document.querySelector('#box-nine');
+boxNine.style.opacity = 1;
 
 /*________________________________________________________________
 Part 2.) The Hidden Message
@@ -26,3 +23,5 @@ Lastly, we've added an ID of "hidden-message" to an empty paragrah
 element. Use JavaScript to inject the paragragh's inner HTML with a 
 string containing whatever text you want.
 ________________________________________________________________*/
+let hiddenMessage = document.querySelector('#hidden-message');
+hiddenMessage.innerHTML = "Javascript, be good to me!";
